@@ -1,3 +1,6 @@
+/**
+ * Здесь в будущем будет рандомная генерация, но пока что все построено заранее
+ */
 public class FieldGenerator {
     private String[][] emptyFieldGenerate (){
         String[][] emptyField = new String[24][24];
