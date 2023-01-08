@@ -2,7 +2,7 @@
  * Здесь в будущем будет рандомная генерация, но пока что все построено заранее
  */
 public class FieldGenerator {
-    private String[][] emptyFieldGenerate (){
+    private String[][] emptyFieldGenerate() {
         String[][] emptyField = new String[24][24];
         for (int i = 0; i < emptyField.length; i++) {
             for (int j = 0; j < emptyField.length; j++) {
@@ -110,9 +110,6 @@ public class FieldGenerator {
         for (int i = 20; i <= 22; i++) {
             playField[17][i] = "[B]";
         }
-        playField[1][22] = "[C]";
-        playField[1][1] = "[C]";
-        playField[14][22] = "[C]";
         return playField;
     }
 }

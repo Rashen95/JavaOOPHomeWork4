@@ -1,7 +1,7 @@
 public class PlayingField {
     String[][] field;
 
-    public PlayingField (String[][] arg_field) {
+    public PlayingField(String[][] arg_field) {
         this.field = arg_field;
     }
 
