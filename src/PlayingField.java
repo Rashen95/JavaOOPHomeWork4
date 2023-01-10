@@ -15,7 +15,7 @@ public class PlayingField {
         for (int[] strings : this.field) {
             for (int j = 0; j < this.field.length; j++) {
                 if (strings[j] == -1) {
-                    System.out.print("[%]");
+                    System.out.print("[@]");
                 } else if (strings[j] == -2) {
                     System.out.print("[S]");
                 } else if (strings[j] == -3) {
@@ -32,7 +32,7 @@ public class PlayingField {
 
     public void routeView() {
         int[][] fieldWithRoute = new BuildingARoute().builder(close.getX(), close.getY(),
-                new WaveBuilder().waveBuilder(start.getX(), start.getY(), this.field));
+                new WaveBuilder().waveBuilder(start.getX(), start.getY(), this.field)); // Построение цифровой волны и маршрута
         for (int[] strings : fieldWithRoute) {
             for (int j = 0; j < fieldWithRoute.length; j++) {
                 if (strings[j] == -1) {
