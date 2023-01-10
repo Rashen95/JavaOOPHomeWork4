@@ -15,11 +15,11 @@ public class PlayingField {
         for (int[] strings : this.field) {
             for (int j = 0; j < this.field.length; j++) {
                 if (strings[j] == -1) {
-                    System.out.print("[@]");
+                    System.out.print("\u001B[31m[@]\u001B[0m");
                 } else if (strings[j] == -2) {
-                    System.out.print("[S]");
+                    System.out.print("\u001B[32m[S]\u001B[0m");
                 } else if (strings[j] == -3) {
-                    System.out.print("[C]");
+                    System.out.print("\u001B[32m[C]\u001B[0m");
                 } else if (strings[j] == 0) {
                     System.out.print("   ");
                 } else if (strings[j] == -5) {
@@ -36,15 +36,15 @@ public class PlayingField {
         for (int[] strings : fieldWithRoute) {
             for (int j = 0; j < fieldWithRoute.length; j++) {
                 if (strings[j] == -1) {
-                    System.out.print("[@]");
+                    System.out.print("\u001B[31m[@]\u001B[0m");
                 } else if (strings[j] == -2) {
-                    System.out.print("[S]");
+                    System.out.print("\u001B[32m[S]\u001B[0m");
                 } else if (strings[j] == -3) {
-                    System.out.print("[C]");
+                    System.out.print("\u001B[32m[C]\u001B[0m");
                 } else if (strings[j] == 0) {
                     System.out.print("   ");
                 } else if (strings[j] == -5) {
-                    System.out.print(" + ");
+                    System.out.print("\u001B[34m + \u001B[0m");
                 }
             }
             System.out.println();

@@ -8,7 +8,7 @@
 public class Program {
     public static void main(String[] args) {
         Point startPoint = new Point(22, 2); // Создание точки старта
-        Point closePoint = new Point(2, 2); // Создание точки выхода
+        Point closePoint = new Point(14, 22); // Создание точки выхода
         PlayingField myField =
                 new PlayingField(
                         new FieldGenerator().generator(), startPoint, closePoint); // Создание поля
